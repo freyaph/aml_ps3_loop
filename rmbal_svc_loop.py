@@ -111,13 +111,7 @@ for i in range(len(df_split)):
   print(Counter(y_raw['is_sar']))
     # =============================================================================
   # Active learning
-  # =============================================================================
-  # Ranked BMAL
-  # https://modal-python.readthedocs.io/en/latest/content/examples/ranked_batch_mode.html
-  # CONVERT ALL DATA FRAMES TO NDARRAYS: df.to_numpy() or df.values
-
-  # knn.fit(X_train)
-  # y_train_pred_knn = knn.labels_
+  # ============================================================================
 
   # creating the active learner
   learner = ActiveLearner(
@@ -173,10 +167,6 @@ print ("Finished")
 print(f1_results)
 print(auc_results)
 print(gmean_results)
-
-ex = pd.DataFrame(f1_results)
-ex.plot(kind='line', title = 'F1 scores by iteration',xlabel='Query number')
-plt.show()
 
 
 import pickle
