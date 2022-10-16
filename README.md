@@ -5,3 +5,11 @@ The application of Partition-based Skew-Specialized Sampling for Batch Mode Acti
 The code is adapted from https://github.com/rmfajri/PS3
 
 Data from https://github.com/IBM/AMLSim
+
+Python 3.7
+
+sklearn
+
+numpy
+
+pandas
